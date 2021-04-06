@@ -9,7 +9,8 @@ import Saturno from './componnets/Saturno';
 import Terra from './componnets/Terra';
 import Urano from './componnets/Urano';
 import Venus from './componnets/Venus';
-import JupterDescricao from './componnets/planet/Descricao/JupterDescricao'
+import JupterDescricao from './componnets/planet/Descricao/JupterDescricao';
+import MarteDescricao from './componnets/planet/Descricao/MarteDescricao'
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -38,6 +39,7 @@ export default function App() {
   
 
     <Stack.Screen name="JupterDescricao" component={JupterDescricao} options={{ title: 'Júpiter' }}  />
+    <Stack.Screen name="MarteDescricao" component={MarteDescricao} options={{ title: 'Marte' }}  />
     </Stack.Navigator>
 
 
